@@ -1,5 +1,7 @@
 from flask import render_template
+from flask import Flask
 #наша новая функция сайта
+app = Flask(__name__)
 @app.route("/data_to")
 def data_to():
  #создаем переменные с данными для передачи в шаблон
