@@ -1,10 +1,16 @@
 language: python
 before_install:
- - chmod +x ./flaskapp/st.sh
+- chmod +x ./flaskapp/st.sh
 install:
- - pip3 install flask
- - pip3 install gunicorn
- - pip3 install requests
+- pip3 install flask
+- pip3 install gunicorn
+- pip3 install requests
+- pip3 install flask-bootstrap
+- pip3 install flask-wtf
+- pip3 install pillow
+- pip3 install tensorflow==2.2.0
+- pip3 install keras
 script:
- - cd flaskapp
- - ./st.sh
+- cd flaskapp
+- ./st.sh
+
