@@ -1,3 +1,2 @@
-gunicorn --bind 127.0.0.1:5000 wsgi:app & APP_PID=$!
-
+gunicorn --bind 127.0.0.1:5000 wsgi:app
 exit 0
